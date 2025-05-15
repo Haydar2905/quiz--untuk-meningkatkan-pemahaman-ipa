@@ -237,114 +237,16 @@ span label:hover {
   transform: scale(1.05);
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 10px;
-  padding: 0;
-}
-
-.start-container, #quiz-container, #score-modal {
-  max-width: 480px;
-  margin: auto;
-  padding: 10px;
-}
-
-h1, h3, p {
-  text-align: center;
-}
-
-button {
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  margin-top: 10px;
-  border-radius: 5px;
-  border: none;
-  background-color: #007bff;
-  color: white;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-input[type="text"], select {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  margin-top: 10px;
-  box-sizing: border-box;
-}
-
-.game-options-container span {
-  display: block;
-  margin: 8px 0;
-}
-
-.game-options-container label {
-  cursor: pointer;
-  font-size: 16px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  display: block;
-}
-
-.game-options-container input[type="radio"] {
-  margin-right: 10px;
-}
-
-.progress-container {
-  width: 100%;
-  background-color: #e0e0e0;
-  height: 12px;
-  border-radius: 6px;
-  margin-bottom: 10px;
-}
-
-#progress-bar {
-  height: 12px;
-  background-color: #007bff;
-  width: 0%;
-  border-radius: 6px;
-  transition: width 0.3s ease-in-out;
-}
-
-.timer-progress-container {
-  width: 100%;
-  background-color: #e0e0e0;
-  height: 8px;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-#timer-bar {
-  height: 8px;
-  background-color: #007bff;
-  width: 100%;
-  border-radius: 4px;
-  transition: width 1s linear;
-}
-
-.modal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.7);
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-content-container {
-  background-color: white;
-  padding: 20px;
-  width: 90%;
-  max-width: 400px;
-  border-radius: 10px;
-  text-align: center;
+/* Animasi FadeInUp */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 <!DOCTYPE html>
@@ -419,7 +321,6 @@ input[type="text"], select {
     <script src="index.js"></script>
   </body>
 </html>
-
 
 // Soal-soal Quiz
 const questions = [
